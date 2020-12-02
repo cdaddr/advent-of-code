@@ -28,7 +28,7 @@ fn part1(input: &str) -> usize {
     let mut valid: usize = 0;
     for line in input.lines() {
         let (letter, min, max, text) = parse(&line.trim());
-        let appearances: i64 = text.matches(&letter).count() as i64 - 1;
+        let appearances: i64 = text.matches(&letter).count() as i64;
         if appearances >= min && appearances <= max {
             valid += 1;
         }
