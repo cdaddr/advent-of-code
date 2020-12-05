@@ -41,7 +41,7 @@ fn seat_id(pattern: &str) -> usize {
 }
 
 #[test]
-fn test_day3() {
+fn test() {
     assert_eq!(seat_id("FBFBBFFRLR"), 357);
     assert_eq!(seat_id("BFFFBBFRRR"), 567);
     assert_eq!(seat_id("FFFBBBFRRR"), 119);
